@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 import numpy as np
 
-st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
+st.set_page_config(page_title="30", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
 #audio_file = open('myaudio.ogg', 'rb')
 #audio_bytes = audio_file.read()
