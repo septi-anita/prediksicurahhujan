@@ -31,7 +31,7 @@ tombol=st.button("cari")
 if tombol:
   st.snow ()
   st.write (date)
-  d = date.split("-")[2]
+  #d = date.split("-")[2]
   st.write (d) 
  ####
  
