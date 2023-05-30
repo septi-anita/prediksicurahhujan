@@ -15,6 +15,7 @@ st.write("Developed by ")
 
 #input date
 date=st.date_input("Pick a Date")
+a=date[0:3]
 #d=date[3]
 
 
@@ -27,7 +28,7 @@ date=st.date_input("Pick a Date")
 tombol=st.button("cari")
 if tombol:
   st.snow ()
-  st.write (date)
+  st.write (a)
  ####
  
 
