@@ -2,7 +2,7 @@ import streamlit as st
 #from PIL import Image
 import numpy as np
 import pandas as pd
-import calendar as cld
+#import calendar as cld
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
@@ -15,12 +15,11 @@ st.write("Developed by ")
 
 #input date
 date=st.date_input("Pick a Date")
-a=date[0:3]
+#a=date[0:3]
 #d=date[3]
 
 
-#d = date.split("-")[2]
-#st.write (d)  # Output: 30
+ # Output: 30
 
 #m=
 #y=
@@ -28,7 +27,9 @@ a=date[0:3]
 tombol=st.button("cari")
 if tombol:
   st.snow ()
-  st.write (a)
+  st.write (date)
+  d = date.split("-")[2]
+  st.write (d) 
  ####
  
 
