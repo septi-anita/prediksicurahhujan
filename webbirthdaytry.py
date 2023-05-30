@@ -14,7 +14,7 @@ st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state=
 #st.image(image, caption="I'm one of the luckiest person cause I have friend like u")
 st.balloons()
 st.title(" ***")
-st.write("Happy Birthday to you")
+st.write("Prediksi Curah Hujan")
 tombol=st.button("pencet sini")
 if tombol:
  st.balloons()
