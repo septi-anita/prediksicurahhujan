@@ -27,8 +27,8 @@ for i in lines:
   y.append([1])
 f.close()
 #df = pd.read_csv(r'data_hujan.csv')
-#kt = df[2]
-#kota = st.selectbox ("Pilih lokasi anda:", kt)
+kt = y[i]
+kota = st.selectbox ("Pilih lokasi anda:", kt)
 
 ###########################################
 #df = pd.read_csv(r'.csv')
