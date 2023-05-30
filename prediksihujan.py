@@ -25,8 +25,7 @@ date=st.date_input("Pick a Date")
 
 tombol=st.button("cari")
 if tombol:
- st.balloons()
- st.snow ()
+  st.snow ()
  ####
  
 
