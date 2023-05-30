@@ -14,6 +14,10 @@ st.write("Developed by ")
 
 #input date
 date=st.date_input("Pick a Date")
+d=date[3]
+st.write (d)
+#m=
+#y=
 
 tombol=st.button("cari")
 if tombol:
