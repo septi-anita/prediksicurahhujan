@@ -5,11 +5,6 @@ import pandas as pd
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
-#audio_file = open('myaudio.ogg', 'rb')
-#audio_bytes = audio_file.read()
-
-#st.audio(audio_bytes, format='audio/ogg')
-
 #image = Image.open('sunrise.jpg')
 
 #st.image(image, caption="")
