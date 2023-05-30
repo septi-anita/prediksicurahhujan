@@ -19,7 +19,7 @@ date=st.date_input("Pick a Date")
 
 
 #d = date.split("-")[2]
-st.write (d)  # Output: 30
+st.write (date)  # Output: 30
 
 #m=
 #y=
