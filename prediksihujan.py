@@ -15,30 +15,10 @@ st.write("Developed by ")
 #input date
 date=st.date_input("Pick a Date")
 
-#input place
-###########################################
-f = open(r'data_hujan.csv')
-lines =f.readlines()
-#x=[]
-y=[]
-
-for i in lines:
-  #x.append(float(i.split( )[0]))
-  y.append([1])
-f.close()
-#df = pd.read_csv(r'data_hujan.csv')
-kt = y[i]
-kota = st.selectbox ("Pilih lokasi anda:", kt)
-
-###########################################
-#df = pd.read_csv(r'.csv')
-#place = st.selectbox ("Pilih lokasi anda:", df)
-
 tombol=st.button("cari")
 if tombol:
   st.snow ()
-  #CH= df[1][kota]
-  #st.write (CH)
+  st.write (date)
  ####
  
 
