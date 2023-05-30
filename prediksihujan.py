@@ -18,8 +18,8 @@ date=st.date_input("Pick a Date")
 #input place
 ###########################################
 df = pd.read_csv(r'data_hujan.csv')
-#kt = df[1]
-#kota = st.selectbox ("Pilih lokasi anda:", kt)
+kt = df[1]
+kota = st.selectbox ("Pilih lokasi anda:", kt)
 
 ###########################################
 #df = pd.read_csv(r'.csv')
