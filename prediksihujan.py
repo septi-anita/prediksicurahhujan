@@ -12,7 +12,7 @@ st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state=
 
 #image = Image.open('sunrise.jpg')
 
-#st.image(image, caption="I'm one of the luckiest person cause I have friend like u")
+#st.image(image, caption="")
 
 st.title("Prediksi Curah Hujan")
 st.write("Developed by ")
