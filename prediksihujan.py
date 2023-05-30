@@ -12,13 +12,21 @@ st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state=
 #image = Image.open('sunrise.jpg')
 
 #st.image(image, caption="I'm one of the luckiest person cause I have friend like u")
-st.balloons()
+
 st.title("Prediksi Curah Hujan")
 st.write("Developed by ")
-date=st.date_input("pick a date")
-tombol=st.button("pencet sini")
+
+#input date
+date=st.date_input("Pick a Date")
+
+#input place
+#df = pd.read_csv(r'.csv')
+#place = st.selectbox ("Pilih lokasi anda:", df)
+
+tombol=st.button("cari")
 if tombol:
  st.balloons()
+ ####
  
 
 
