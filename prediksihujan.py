@@ -2,6 +2,7 @@ import streamlit as st
 #from PIL import Image
 import numpy as np
 import pandas as pd
+import calendar as cld
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
@@ -17,7 +18,7 @@ date=st.date_input("Pick a Date")
 #d=date[3]
 
 
-d = date.split("-")[2]
+#d = date.split("-")[2]
 st.write (d)  # Output: 30
 
 #m=
