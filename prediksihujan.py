@@ -17,7 +17,10 @@ st.write("Developed by ")
 #input date
 date=st.date_input("Pick a Date")
 convert= date.strftime("%Y")
-st.write(type(int(convert)))
+convert=int(convert)
+st.write(convert)
+st.write(convert+5)
+
 #a=date[0:3]
 #d=date[3]
 
