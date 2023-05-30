@@ -19,33 +19,21 @@ date=st.date_input("Pick a Date")
 
 Y= date.strftime("%Y")
 Y=int(Y)
-st.write(Y)
+#st.write(Y)
 
 M= date.strftime("%m")
 M=int(M)
-st.write(M)
+#st.write(M)
 
 D= date.strftime("%d")
 D=int(D)
-st.write(D)
-
-
-#a=date[0:3]
-#d=date[3]
-
-
- # Output: 30
-
-#m=
-#y=
+#st.write(D)
 
 tombol=st.button("cari")
 if tombol:
   st.snow ()
   st.write (date)
-  #d = date.split("-")[2]
-  #st.write (d) 
- ####
+  st.write (Y+M+D)
  
 
 
