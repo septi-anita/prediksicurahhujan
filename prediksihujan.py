@@ -11,10 +11,19 @@ st.title("AI Prediksi Curah Hujan")
 st.write("Developed by Z.L.D.S Team")
 
 #Gambar
-image = Image.open('Rainy Weather (HD).png')
-st.image(image, caption=None, width=250, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+col1, col2, col3 = st.columns(3)
 
-#input date
+with col1:
+    st.write(' ')
+
+with col2:
+    image = Image.open('Rainy Weather (HD).png')
+    st.image(image, caption=None, width=350)
+
+with col3:
+    st.write(' ')
+
+    #input date
 date=st.date_input("Pick a Date")
 
 Y= date.strftime("%Y")
