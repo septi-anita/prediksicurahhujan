@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime 
 #import calendar as cld
 
-st.set_page_config(page_title="AI:RainfallPrediction", page_icon="🧊", initial_sidebar_state="collapsed", layout="dashboard")#, theme="dark")
+st.set_page_config(page_title="AI:RainfallPrediction", page_icon="🧊", initial_sidebar_state="collapsed", layout="centered")#, theme="dark")
 
 #Gambar
 col1, col3 = st.columns(2)
