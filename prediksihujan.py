@@ -18,7 +18,7 @@ with col1:
     #st.write('       ')
     
 with col3:
-    image = Image.open('Rainy Weather (HD).png')
+    image = Image.open('tidak hujan.png')
     st.image(image, caption=None, width=420)
 
 
