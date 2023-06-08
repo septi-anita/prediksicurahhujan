@@ -7,7 +7,7 @@ from datetime import datetime
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
-st.title("AI Prediksi Curah Hujan")
+st.title("Rainfall Prediction AI")
 st.write("Developed by Z.L.D.S Team")
 
 #Gambar
