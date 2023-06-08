@@ -1,5 +1,5 @@
 import streamlit as st
-#from PIL import Image
+from PIL import Image
 import numpy as np
 import pandas as pd
 from datetime import datetime 
@@ -7,9 +7,9 @@ from datetime import datetime
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
-#image = Image.open('sunrise.jpg')
+image = Image.open('Rainy Weather (HD).png')
 
-#st.image(image, caption="")
+st.image(image, caption="yy")
 
 st.title("Prediksi Curah Hujan")
 st.write("Developed by Z.L.D.S Team")
