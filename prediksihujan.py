@@ -12,7 +12,7 @@ st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state=
 #st.image(image, caption="")
 
 st.title("Prediksi Curah Hujan")
-st.write("Developed by ")
+st.write("Developed by Z.L.D.S Team")
 
 #input date
 date=st.date_input("Pick a Date")
@@ -33,7 +33,7 @@ tombol=st.button("cari")
 if tombol:
   st.snow ()
   st.write (date)
-  st.write (Y+M+D)
+
  
 
 
