@@ -33,19 +33,21 @@ tombol=st.button("cari")
 if tombol:
   #st.snow ()
   st.write (date)
-  
+  image = Image.open('hujan deras.png')
+  st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    
   #if :
-    image = Image.open('hujan deras.png')
-    st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.write ('hujan deras')
+    #image = Image.open('hujan deras.png')
+    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    #st.write ('hujan deras')
   #elif :
-    image = Image.open('gerimis.png')
-    st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.write ('gerimis')
+    #image = Image.open('gerimis.png')
+    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    #st.write ('gerimis')
   #else :
-    image = Image.open('tidak hujan.png')
-    st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    st.write ('tidak hujan')
+    #image = Image.open('tidak hujan.png')
+    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+    #st.write ('tidak hujan')
  
 
 
