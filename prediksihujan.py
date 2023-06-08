@@ -35,7 +35,8 @@ if tombol:
   st.write (date)
   image = Image.open('hujan deras.png')
   st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    
+  st.write ('hujan deras')
+  
   #if :
     #image = Image.open('hujan deras.png')
     #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
