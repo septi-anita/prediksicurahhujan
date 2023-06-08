@@ -18,7 +18,7 @@ with col1:
     #st.write('       ')
     
 with col3:
-    image = Image.open('tidak hujan.png')
+    image = Image.open('umbrella.png')
     st.image(image, caption=None, width=420)
 
 
