@@ -8,18 +8,18 @@ from datetime import datetime
 st.set_page_config(page_title="AI:RainfallPrediction", page_icon="🧊", initial_sidebar_state="collapsed", layout="dashboard")#, theme="dark")
 
 #Gambar
-col1, col2, col3 = st.columns(3)
+col1, col3 = st.columns(2)
 
 with col1:
     st.title("Rainfall Prediction AI")
     st.write("Developed by Z.L.D.S Team")
 
-with col2:
-    st.write('       ')
+#with col2:
+    #st.write('       ')
     
 with col3:
     image = Image.open('Rainy Weather (HD).png')
-    st.image(image, caption=None, width=420)
+    st.image(image, caption=None, width=350)
 
 
 #input date
