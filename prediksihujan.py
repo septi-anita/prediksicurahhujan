@@ -18,7 +18,7 @@ with col1:
 
 with col2:
     image = Image.open('Rainy Weather (HD).png')
-    st.image(image, caption=None, width=350)
+    st.image(image, caption=None, width=400)
 
 with col3:
     st.write(' ')
