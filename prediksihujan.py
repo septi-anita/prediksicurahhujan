@@ -12,7 +12,7 @@ st.write("Developed by Z.L.D.S Team")
 
 #Gambar
 image = Image.open('Rainy Weather (HD).png')
-st.image(image, caption=None, width=500, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+st.image(image, caption=None, width=250, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 #input date
 date=st.date_input("Pick a Date")
