@@ -7,21 +7,19 @@ from datetime import datetime
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
-st.title("Rainfall Prediction AI")
-st.write("Developed by Z.L.D.S Team")
-
 #Gambar
-col1, col2, col3 = st.columns(3)
+col1, col2, = st.columns(2)
 
 with col1:
-    st.write(' ')
+    st.title("Rainfall Prediction AI")
+    st.write("Developed by Z.L.D.S Team")
 
 with col2:
     image = Image.open('Rainy Weather (HD).png')
     st.image(image, caption=None, width=400)
 
-with col3:
-    st.write(' ')
+#with col3:
+    #st.write(' ')
 
     #input date
 date=st.date_input("Pick a Date")
