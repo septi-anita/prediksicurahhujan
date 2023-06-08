@@ -15,7 +15,7 @@ with col1:
     st.write("Developed by Z.L.D.S Team")
 
 with col2:
-    #st.write('       ')
+    st.write('       ')
     
 with col3:
     image = Image.open('Rainy Weather (HD).png')
