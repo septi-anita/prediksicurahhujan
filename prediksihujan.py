@@ -19,7 +19,7 @@ with col2:
     
 with col3:
     image = Image.open('Rainy Weather (HD).png')
-    st.image(image, caption=None, width=340)
+    st.image(image, caption=None, width=320)
 
 
 #input date
