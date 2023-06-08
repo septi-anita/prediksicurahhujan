@@ -7,12 +7,12 @@ from datetime import datetime
 
 st.set_page_config(page_title="300300", page_icon="🧊", initial_sidebar_state="expanded", layout="wide")#, theme="dark")
 
-image = Image.open('Rainy Weather (HD).png')
-
-st.image(image, caption="yy")
-
 st.title("Prediksi Curah Hujan")
 st.write("Developed by Z.L.D.S Team")
+
+#Gambar
+image = Image.open('Rainy Weather (HD).png')
+st.image(image, caption=None, width=500, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
 
 #input date
 date=st.date_input("Pick a Date")
