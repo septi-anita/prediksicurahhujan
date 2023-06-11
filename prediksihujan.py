@@ -65,8 +65,11 @@ if tombol:
       #image = Image.open('gerimis.png')
       #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       #st.write ('gerimis')
-   elif CH<=168:
+   else:
       st.write(D+1)
+      image = Image.open('tidak hujan.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('tidak hujan')
     
   #tampilan sebulan  
   for D in range (0,30):
@@ -80,11 +83,11 @@ if tombol:
       #image = Image.open('gerimis.png')
       #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       #st.write ('gerimis')
-    elif CH<=168:
+    else :
       st.write(D+1)
-    #image = Image.open('tidak hujan.png')
-    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    #st.write ('tidak hujan')
+      image = Image.open('tidak hujan.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('tidak hujan')
  
   #col1, col2, col3 = st.columns(3)
 
