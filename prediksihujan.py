@@ -49,30 +49,35 @@ st.write(CH)
 
 tombol=st.button("search")
 if tombol:
-  #st.write (CH)
-  #st.snow ()
-  st.write (date)
-  image = Image.open('hujan deras.png')
-  st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-  st.write ('hujan deras')
  
-  #tampilan harian 
-  if CH>=168:
+  #tampilan harian
+ col1, col2, col3 = st.columns([0.55, 0.1, 0.35])
+
+ with col1:
+    st.write('       ')
+
+ with col2:
+    st.write('This Day')
+    if CH>=168:
       st.write(D+1, M, Y)
       image = Image.open('hujan deras.png')
       st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('hujan deras')
-   #elif CH in range (82, 168):
-      #st.write(D+1, M, Y)
-      #image = Image.open('gerimis.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('gerimis')
-  else:
+    elif CH in range (82, 168):
+      st.write(D+1, M, Y)
+      image = Image.open('gerimis.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('gerimis')
+    elif CH<=82:
       st.write(D+1, M, Y)
       image = Image.open('tidak hujan.png')
       st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('tidak hujan')
     
+ with col3:
+    st.write('       ')  
+    
+  
   #tampilan sebulan  
   #for D in range (0,30):
     #if CH>=168:
