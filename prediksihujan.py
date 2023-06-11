@@ -65,7 +65,7 @@ if tombol:
       image = Image.open('gerimis.png')
       st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
-   else CH<=82:
+   elif CH<=82:
       st.write(D+1)
     
   #tampilan sebulan  
@@ -80,7 +80,7 @@ if tombol:
       image = Image.open('gerimis.png')
       st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
-    else CH<=82:
+    elif CH<=82:
       st.write(D+1)
     #image = Image.open('tidak hujan.png')
     #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
