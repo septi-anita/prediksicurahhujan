@@ -41,11 +41,8 @@ D=int(D)
 df = pd.read_csv(r'data_hujan.csv')
 
 PCHMAR23 = df['PCHMAR23'][D-1]
-st.write (PCHMAR23)
 PCHAPR23 = df['PCHAPR23'][D-1]
-st.write (PCHAPR23)
-PCHMEI23 = df['PCHMEI23'][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
-st.write (PCHMEI23)
+PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 st.write(CH)
