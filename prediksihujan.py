@@ -51,7 +51,7 @@ tombol=st.button("search")
 if tombol:
  
   #tampilan harian
- col1, col2, col3 = st.columns([0.15, 0.7, 0.15])
+ col1, col2, col3 = st.columns([0.3, 0.4, 0.3])
 
  with col1:
     st.write('       ')
@@ -61,18 +61,20 @@ if tombol:
     if CH>=168:
       st.write(D+1, M, Y)
       image = Image.open('hujan deras.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.image(image, caption=None, width=200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('hujan deras')
-    elif CH==CH:
-      st.write(D+1, M, Y)
-      image = Image.open('gerimis.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      st.write ('gerimis')
+
     elif CH<=82:
       st.write(D+1, M, Y)
       image = Image.open('tidak hujan.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.image(image, caption=None, width=200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('tidak hujan')
+        
+    else:
+      st.write(D+1, M, Y)
+      image = Image.open('gerimis.png')
+      st.image(image, caption=None, width=200, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('gerimis')
     
  with col3:
     st.write('       ')  
