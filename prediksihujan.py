@@ -40,7 +40,7 @@ D=int(D)
 #read data
 df = pd.read_csv(r'data_hujan.csv')
 
-PCHMAR23 = df[3][D+1]
+PCHMAR23 = df[3][D]
 #PCHAPR23 = df[4][D+1]
 #PCHMEI23 = df[5][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
