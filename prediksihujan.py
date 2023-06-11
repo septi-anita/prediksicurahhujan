@@ -45,7 +45,7 @@ PCHAPR23 = df['PCHAPR23'][D-1]
 PCHMEI23 = df['PCHMEI23'][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
-print(CH)
+st.write(CH)
 
 tombol=st.button("search")
 if tombol:
