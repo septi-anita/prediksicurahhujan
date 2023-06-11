@@ -51,7 +51,7 @@ tombol=st.button("search")
 if tombol:
  
   #tampilan harian
- col1, col2, col3 = st.columns([0.55, 0.1, 0.35])
+ col1, col2, col3 = st.columns([0.15, 0.7, 0.15])
 
  with col1:
     st.write('       ')
