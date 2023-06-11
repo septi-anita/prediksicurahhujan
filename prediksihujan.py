@@ -56,22 +56,22 @@ if tombol:
   st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
   st.write ('hujan deras')
  
-  #tmpilan harian 
-  #if CH>=168:
-      #st.write(D+1)
-      #image = Image.open('hujan deras.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('hujan deras')
+  #tampilan harian 
+  if CH>=168:
+      st.write(D+1, M, Y)
+      image = Image.open('hujan deras.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('hujan deras')
    #elif CH in range (82, 168):
-      #st.write(D+1)
+      #st.write(D+1, M, Y)
       #image = Image.open('gerimis.png')
       #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       #st.write ('gerimis')
-   #else:
-      #st.write(D+1)
-      #image = Image.open('tidak hujan.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('tidak hujan')
+   else:
+      st.write(D+1, M, Y)
+      image = Image.open('tidak hujan.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('tidak hujan')
     
   #tampilan sebulan  
   #for D in range (0,30):
