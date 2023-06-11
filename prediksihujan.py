@@ -41,11 +41,11 @@ D=int(D)
 df = pd.read_csv(r'data_hujan.csv')
 
 PCHMAR23 = df['PCHMAR23'][D-1]
-st.write('PCHMAR23=', PCHMAR23)
-#PCHAPR23 = df[4][D+1]
-#PCHMEI23 = df[5][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
+PCHAPR23 = df['PCHAPR23'][D-1]
+PCHMEI23 = df['PCHMEI23'][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
-#CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
+CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
+print(CH)
 
 tombol=st.button("search")
 if tombol:
