@@ -40,15 +40,15 @@ D=int(D)
 #read data
 df = pd.read_csv(r'data_hujan.csv')
 
-PCHMAR23 = df[3][D+1]
-PCHAPR23 = df[4][D+1]
-PCHMEI23 = df[5][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
+#PCHMAR23 = df[3][D+1]
+#PCHAPR23 = df[4][D+1]
+#PCHMEI23 = df[5][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
-CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
+#CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 
 tombol=st.button("search")
 if tombol:
-  st.write (CH)
+  #st.write (CH)
   #st.snow ()
   st.write (date)
   image = Image.open('hujan deras.png')
