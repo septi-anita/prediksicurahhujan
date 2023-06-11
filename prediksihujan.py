@@ -37,6 +37,15 @@ D= date.strftime("%d")
 D=int(D)
 #st.write(D)
 
+#read data
+df = pd.read_csv(r'data_hujan.csv')
+
+PCHMAR23 = df[3][D+1]
+PCHAPR23 = df[4][D+1]
+PCHMEI23 = df[5][D+1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
+
+CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
+
 tombol=st.button("search")
 if tombol:
   #st.snow ()
@@ -44,20 +53,44 @@ if tombol:
   image = Image.open('hujan deras.png')
   st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
   st.write ('hujan deras')
-  
-  #if :
-    #image = Image.open('hujan deras.png')
-    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    #st.write ('hujan deras')
-  #elif :
-    #image = Image.open('gerimis.png')
-    #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-    #st.write ('gerimis')
-  #else :
+ 
+  #tmpilan harian 
+  if CH>=168:
+      st.write(D+1)
+      image = Image.open('hujan deras.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('hujan deras')
+   elif 168>=CH>=82:
+      st.write(D+1)
+      image = Image.open('gerimis.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('gerimis')
+   else CH<=82:
+      st.write(D+1)
+    
+  #tampilan sebulan  
+  for D in range (0,30):
+    if CH>=168:
+      st.write(D+1)
+      image = Image.open('hujan deras.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('hujan deras')
+    elif 168>=CH>=82:
+      st.write(D+1)
+      image = Image.open('gerimis.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('gerimis')
+    else CH<=82:
+      st.write(D+1)
     #image = Image.open('tidak hujan.png')
     #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
     #st.write ('tidak hujan')
  
+  #col1, col2, col3 = st.columns(3)
+
+  #with col1:
+   #st.header("A cat")
+   #st.image("https://static.streamlit.io/examples/cat.jpg")
 
 
 
