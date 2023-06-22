@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import datetime 
 #import calendar as cld
 
-st.set_page_config(page_title="AI:RainfallPrediction", page_icon="🧊", initial_sidebar_state="collapsed", layout="centered")#, theme="dark")
+st.set_page_config(page_title="AI:RainfallPrediction", page_icon="☔", initial_sidebar_state="collapsed", layout="centered")
 
 #Gambar
 col1, col2, col3 = st.columns([0.55, 0.1, 0.35])
@@ -51,20 +51,14 @@ tombol=st.button("search")
 if tombol:
  
   #tampilan harian
- col1, col2, col3 = st.columns([0.3, 0.4, 0.3])
-
- with col1:
-    st.write('       ')
-
- with col2:
-    st.write('This Day')
-    if CH>=168:
+   st.write('This Day')
+    if CH>=40:
       st.write(D, M, Y)
       image = Image.open('hujan deras.png')
       st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('hujan deras')
 
-    elif CH<=82:
+    elif CH<=30:
       st.write(D, M, Y)
       image = Image.open('tidak hujan.png')
       st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
@@ -76,27 +70,26 @@ if tombol:
       st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
- with col3:
-    st.write('       ')  
     
-  
   #tampilan sebulan  
-  #for D in range (0,30):
-    #if CH>=168:
-      #st.write(D+1)
-      #image = Image.open('hujan deras.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('hujan deras')
-    #elif CH<=168 and CH>=82:
-      #st.write(D+1)
-      #image = Image.open('gerimis.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('gerimis')
-    #else :
-      #st.write(D+1)
-      #image = Image.open('tidak hujan.png')
-      #st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      #st.write ('tidak hujan')
+  for D in range (0,31):
+    col [D] = st.columns(31)
+    if CH>=40:
+      st.write(D+1, M, Y)
+      image = Image.open('hujan deras.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('hujan deras')
+    elif CH<=30:
+      st.write(D+1, M, Y)
+      image = Image.open('tidak hujan.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('tidak hujan')
+    else :
+      st.write(D+1, M, Y)
+      image = Image.open('gerimis.png')
+      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.write ('gerimis')
+      
  
   #col1, col2, col3 = st.columns(3)
 
