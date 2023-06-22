@@ -47,15 +47,6 @@ PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebaga
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 #st.write(CH)
 
-# Mengatur jumlah baris dan kolom
-jumlah_baris = 5
-jumlah_kolom = 3
-
-# Membuat tabel
-for baris in range(jumlah_baris):
-   for kolom in range(jumlah_kolom):
-       st.write("Cell [{}][{}]".format(baris, kolom), end="\t")
-   s.write("\n")
 
 tombol=st.button("search")
 if tombol:
