@@ -21,7 +21,15 @@ with col3:
     image = Image.open('Rainy Weather (HD).png')
     st.image(image, caption=None, width=300)
 
+# Mengatur jumlah baris dan kolom
+jumlah_baris = 5
+jumlah_kolom = 3
 
+# Membuat tabel
+for baris in range(jumlah_baris):
+   for kolom in range(jumlah_kolom):
+       st.write("Cell [{}][{}]".format(baris, kolom), end="\t")
+   s.write("\n")
 #input date
 date=st.date_input("Pick a Date")
 
