@@ -72,7 +72,7 @@ if tombol:
     
     
   #tampilan sebulan  
-  for D in range (0,31):
+ for D in range (0,31):
     col [D] = st.columns(31)
     if CH>=40:
       st.write(D+1, M, Y)
