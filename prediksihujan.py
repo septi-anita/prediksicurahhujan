@@ -49,6 +49,15 @@ CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 
 tombol=st.button("search")
 if tombol:
+   # Mengatur jumlah baris dan kolom
+   jumlah_baris = 5
+   jumlah_kolom = 3
+
+   # Membuat tabel
+   for baris in range(jumlah_baris):
+      for kolom in range(jumlah_kolom):
+         st.write("Cell [{}][{}]".format(baris, kolom), end="\t")
+      s.write("\n")
  
   #tampilan harian
    st.write('This Day')
@@ -70,15 +79,7 @@ if tombol:
       st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
-# Mengatur jumlah baris dan kolom
-  jumlah_baris = 5
-  jumlah_kolom = 3
 
-# Membuat tabel
-  for baris in range(jumlah_baris):
-      for kolom in range(jumlah_kolom):
-         st.write("Cell [{}][{}]".format(baris, kolom), end="\t")
-      s.write("\n")
 
   #tampilan sebulan  
   
