@@ -55,19 +55,19 @@ if tombol:
    if CH>=40:
       st.write(D, M, Y)
       image = Image.open('hujan deras.png')
-      st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('hujan deras')
 
    elif CH<=30:
       st.write(D, M, Y)
       image = Image.open('tidak hujan.png')
-      st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('tidak hujan')
         
    else:
       st.write(D, M, Y)
       image = Image.open('gerimis.png')
-      st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+      st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
     
@@ -75,22 +75,22 @@ if tombol:
    ite = range(1,31,1)
    for D in ite :
  #for D in range (0,31):
-    col [D] = st.columns(31)
-    if CH>=40:
-      st.write(D+1, M, Y)
-      image = Image.open('hujan deras.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      st.write ('hujan deras')
-    elif CH<=30:
-      st.write(D+1, M, Y)
-      image = Image.open('tidak hujan.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      st.write ('tidak hujan')
-    else :
-      st.write(D+1, M, Y)
-      image = Image.open('gerimis.png')
-      st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-      st.write ('gerimis')
+      col [D] = st.columns(31)
+      if CH>=40:
+         st.write(D+1, M, Y)
+         image = Image.open('hujan deras.png')
+         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+         st.write ('hujan deras')
+      elif CH<=30:
+         st.write(D+1, M, Y)
+         image = Image.open('tidak hujan.png')
+         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+         st.write ('tidak hujan')
+      else :
+         st.write(D+1, M, Y)
+         image = Image.open('gerimis.png')
+         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+         st.write ('gerimis')
       
  
   #col1, col2, col3 = st.columns(3)
