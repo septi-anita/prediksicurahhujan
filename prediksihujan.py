@@ -72,8 +72,8 @@ if tombol:
     
     
   #tampilan sebulan  
- ite = range(1,31,1)
- for D in ite :
+  ite = range(1,31,1)
+  for D in ite :
  #for D in range (0,31):
     col [D] = st.columns(31)
     if CH>=40:
