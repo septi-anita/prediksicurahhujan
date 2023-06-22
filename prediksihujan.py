@@ -45,7 +45,7 @@ PCHAPR23 = df['PCHAPR23'][D-1]
 PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
-st.write(CH)
+#st.write(CH)
 
 tombol=st.button("search")
 if tombol:
@@ -70,28 +70,18 @@ if tombol:
       st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
-    
+# Mengatur jumlah baris dan kolom
+  jumlah_baris = 5
+  jumlah_kolom = 3
+
+# Membuat tabel
+  for baris in range(jumlah_baris):
+      for kolom in range(jumlah_kolom):
+         st.write("Cell [{}][{}]".format(baris, kolom), end="\t")
+      s.write("\n")
+
   #tampilan sebulan  
-   ite = range(1,31,1)
-   for D in ite :
- #for D in range (0,31):
-      col [D] = st.columns(31)
-      if CH>=40:
-         st.write(D+1, M, Y)
-         image = Image.open('hujan deras.png')
-         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-         st.write ('hujan deras')
-      elif CH<=30:
-         st.write(D+1, M, Y)
-         image = Image.open('tidak hujan.png')
-         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-         st.write ('tidak hujan')
-      else :
-         st.write(D+1, M, Y)
-         image = Image.open('gerimis.png')
-         st.image(image, caption=None, width=100, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-         st.write ('gerimis')
-      
+  
  
   #col1, col2, col3 = st.columns(3)
 
