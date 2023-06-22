@@ -72,7 +72,9 @@ if tombol:
     
     
   #tampilan sebulan  
- for D in range (0,31):
+ ite = range(1,31,1)
+ for D in ite :
+ #for D in range (0,31):
     col [D] = st.columns(31)
     if CH>=40:
       st.write(D+1, M, Y)
@@ -96,6 +98,9 @@ if tombol:
   #with col1:
    #st.header("A cat")
    #st.image("https://static.streamlit.io/examples/cat.jpg")
+
+#ite = range(1,jh+1,1)
+#for D in ite :
 
 
 
