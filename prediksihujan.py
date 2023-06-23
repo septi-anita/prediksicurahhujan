@@ -5,6 +5,28 @@ import pandas as pd
 from datetime import datetime 
 #import calendar as cld
 
+def call ():
+    global D, M, Y
+    V=np.zeros((31))
+    for D in V :
+       if CH[D]>=40:
+            st.write(D, M, Y)
+            image = Image.open('hujan deras.png')
+            st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+            st.write ('hujan deras')
+
+       elif CH[D]<=30:
+            st.write(D, M, Y)
+            image = Image.open('tidak hujan.png')
+            st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+            st.write ('tidak hujan')
+        
+       else:
+            st.write(D, M, Y)
+            image = Image.open('gerimis.png')
+            st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+            st.write ('gerimis')
+      
 st.set_page_config(page_title="AI:RainfallPrediction", page_icon="☔", initial_sidebar_state="collapsed", layout="centered")
 
 #Gambar
@@ -73,10 +95,11 @@ if tombol:
       st.write ('gerimis')
     
 
-V=np.zeros((31))
+
 #tampilan sebulan  
-  for D in V:
-    st.write (D)
+call()
+ 
+ 
   #col1, col2, col3 = st.columns(3)
 
   #with col1:
