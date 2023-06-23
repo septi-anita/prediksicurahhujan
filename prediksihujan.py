@@ -112,7 +112,7 @@ n = 31
 # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
 data = {}
 for i in range(n):
-    column_name = f'{i+1}', M, Y
+    column_name = [f'{i+1}', M, Y]
     column_data = [f'{j+1}' for j in range(1)]  # contoh data
     data[column_name] = column_data
 
