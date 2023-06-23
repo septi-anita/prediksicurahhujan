@@ -46,7 +46,8 @@ PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebaga
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 #st.write(CH)
 
-
+for i in range (1,4):
+    st.write (i)
 tombol=st.button("search")
 if tombol:
   #tampilan harian
@@ -72,25 +73,7 @@ if tombol:
 
 
 #tampilan sebulan  
-  for i in range (1,32):
-     if CH>=40:
-        st.write(D, M, Y)
-        image = Image.open('hujan deras.png')
-        st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-        st.write ('hujan deras')
-
-     elif CH<=30:
-        st.write(D, M, Y)
-        image = Image.open('tidak hujan.png')
-        st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-        st.write ('tidak hujan')
-        
-     else:
-        st.write(D, M, Y)
-        image = Image.open('gerimis.png')
-        st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-        st.write ('gerimis')
-      
+  
  
   #col1, col2, col3 = st.columns(3)
 
