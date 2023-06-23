@@ -113,7 +113,7 @@ n = 31
 data = {}
 for i in range(n):
     column_name = f'{i+1}'
-    column_data = [f'{j+1}' for j in range(1)]  # contoh data
+    column_data = [f'{j+1}' for j in V]  # contoh data
     data[column_name] = column_data
 
 # Membuat DataFrame
