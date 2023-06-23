@@ -5,6 +5,22 @@ import pandas as pd
 from datetime import datetime 
 #import calendar as cld
 
+st.set_page_config(page_title="AI:RainfallPrediction", page_icon="☔", initial_sidebar_state="collapsed", layout="centered")
+
+#Gambar
+col1, col2, col3 = st.columns([0.55, 0.1, 0.35])
+
+with col1:
+    st.title("Rainfall Prediction AI")
+    st.write("Developed by Z.L.D.S Team")
+
+with col2:
+    st.write('       ')
+    
+with col3:
+    image = Image.open('Rainy Weather (HD).png')
+    st.image(image, caption=None, width=300)
+
 V=[]
 
 def app ():
@@ -32,21 +48,6 @@ def call ():
             st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
             st.write ('gerimis')
       
-st.set_page_config(page_title="AI:RainfallPrediction", page_icon="☔", initial_sidebar_state="collapsed", layout="centered")
-
-#Gambar
-col1, col2, col3 = st.columns([0.55, 0.1, 0.35])
-
-with col1:
-    st.title("Rainfall Prediction AI")
-    st.write("Developed by Z.L.D.S Team")
-
-with col2:
-    st.write('       ')
-    
-with col3:
-    image = Image.open('Rainy Weather (HD).png')
-    st.image(image, caption=None, width=300)
 
 #input date
 date=st.date_input("Pick a Date")
