@@ -5,10 +5,11 @@ import pandas as pd
 from datetime import datetime 
 #import calendar as cld
 
-V=np.zeros((31))
+V=[]
+
 def app ():
     for i in range (1, 32):
-       V[i]=2
+       V.append(i)
 def call ():
     global CH, D, M, Y
   
