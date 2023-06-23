@@ -98,6 +98,7 @@ if tombol:
       st.write ('gerimis')
     
    st.write ('data bulanan')
+   app()
    # Mendapatkan jumlah kolom dari pengguna
    n = 31
     
