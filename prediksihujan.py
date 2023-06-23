@@ -99,7 +99,7 @@ if tombol:
 
 
     #tampilan sebulan
-    st.write ("data bulanan")
+    st.write ('data bulanan')
     app()
     call()
 
