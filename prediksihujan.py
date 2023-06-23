@@ -102,13 +102,13 @@ if tombol:
     
    # Mendapatkan jumlah kolom dari pengguna
    n = 31
-   st.write(PCHMAR23)
+   #st.write(PCHMAR23)
     
     # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
    data = {}
    for i in range(n):
         column_name = f'{i+1}'
-        column_data = [f'{PCHMAR23[i]}'] #for j in V]  # contoh data
+        column_data = [f'{PCHMAR23}'] #for j in V]  # contoh data
         data[column_name] = column_data
 
     
