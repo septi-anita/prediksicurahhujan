@@ -9,7 +9,7 @@ def call ():
     global CH, D, M, Y
     V=np.zeros((31))
     for i in range (1, 32):
-        V[i]=i
+        V[i]=2
     for D in V :
        if CH>=40:
             st.write(D, M, Y)
