@@ -4,12 +4,12 @@ import numpy as np
 import pandas as pd
 from datetime import datetime 
 #import calendar as cld
-
-def call ():
-    global CH, D, M, Y
-    V=np.zeros((31))
+V=np.zeros((31))
     for i in range (1, 32):
         V[i]=2
+def call ():
+    global CH, D, M, Y
+  
     for D in V :
        if CH>=40:
             st.write(D, M, Y)
