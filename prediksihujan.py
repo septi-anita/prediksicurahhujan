@@ -107,7 +107,7 @@ if tombol:
    data = {}
    for i in range(n):
         column_name = f'{i+1}'
-        column_data = [f'{V[i]}']#for j in V]  # contoh data
+        column_data = [f'{PCHMAR23[i]}'] #for j in V]  # contoh data
         data[column_name] = column_data
 
     
