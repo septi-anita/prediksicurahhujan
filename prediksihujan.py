@@ -99,6 +99,7 @@ if tombol:
     
    st.write ('data bulanan')
    app()
+    
    # Mendapatkan jumlah kolom dari pengguna
    n = 31
     
@@ -106,8 +107,10 @@ if tombol:
    data = {}
    for i in range(n):
         column_name = f'{i+1}'
-        column_data = [f'{j+1}' for j in V]  # contoh data
+        column_data = [f'{PCHMAR23[i]}' ]#for j in V]  # contoh data
         data[column_name] = column_data
+
+    
     
     # Membuat DataFrame
    df = pd.DataFrame(data)
