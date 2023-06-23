@@ -70,7 +70,6 @@ df = pd.read_csv(r'data_hujan.csv')
 PCHMAR23 = df['PCHMAR23'][D-1]
 PCHAPR23 = df['PCHAPR23'][D-1]
 PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
-ABC = PCHMAR23/1
 
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 #st.write(CH)
@@ -103,12 +102,13 @@ if tombol:
     
    # Mendapatkan jumlah kolom dari pengguna
    n = 31
+st.write(PCHMAR23)
     
     # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
    data = {}
    for i in range(n):
         column_name = f'{i+1}'
-        column_data = [f'{ABC[i]}'] #for j in V]  # contoh data
+        column_data = [f'{PCHMAR23[i]}'] #for j in V]  # contoh data
         data[column_name] = column_data
 
     
