@@ -8,7 +8,7 @@ from datetime import datetime
 V=np.zeros((31))
 def app ():
     for i in range (1, 32):
-            V[i]=2
+       V[i]=2
 def call ():
     global CH, D, M, Y
   
