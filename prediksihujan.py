@@ -102,7 +102,7 @@ if tombol:
     
    # Mendapatkan jumlah kolom dari pengguna
    n = 31
-st.write(PCHMAR23)
+   st.write(PCHMAR23)
     
     # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
    data = {}
