@@ -96,10 +96,10 @@ if tombol:
       st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
-
+   st.write ('data bulanan')
 
     #tampilan sebulan
-    st.write ('data bulanan')
+    
     app()
     call()
 
