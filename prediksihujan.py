@@ -6,7 +6,7 @@ from datetime import datetime
 #import calendar as cld
 
 def call ():
-    global D, M, Y
+    global CH, D, M, Y
     V=np.zeros((31))
     for D in V :
        if CH[D]>=40:
