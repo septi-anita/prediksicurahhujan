@@ -101,19 +101,19 @@ if tombol:
 
     #tampilan sebulan
     
-   app()
-   call()
+   #app()
+   #call()
 
  
 
 # Mendapatkan jumlah kolom dari pengguna
-n = st.number_input('Masukkan jumlah kolom:', min_value=1, step=1)
+n = 31
 
 # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
 data = {}
 for i in range(n):
-    column_name = f'Kolom {i+1}'
-    column_data = [f'Data {j+1}' for j in range(5)]  # contoh data
+    column_name = f{i+1}
+    column_data = call()#[f'Data {j+1}' for j in range(5)]  # contoh data
     data[column_name] = column_data
 
 # Membuat DataFrame
