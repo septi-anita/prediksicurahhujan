@@ -72,7 +72,7 @@ if tombol:
 
 
 #tampilan sebulan  
-  for i in D[i]:
+  for i in range (1,32):
      if CH>=40:
         st.write(D, M, Y)
         image = Image.open('hujan deras.png')
