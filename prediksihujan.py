@@ -105,6 +105,22 @@ if tombol:
    call()
 
  
+
+# Mendapatkan jumlah kolom dari pengguna
+n = st.number_input('Masukkan jumlah kolom:', min_value=1, step=1)
+
+# Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
+data = {}
+for i in range(n):
+    column_name = f'Kolom {i+1}'
+    column_data = [f'Data {j+1}' for j in range(5)]  # contoh data
+    data[column_name] = column_data
+
+# Membuat DataFrame
+df = pd.DataFrame(data)
+
+# Menampilkan tabel
+st.table(df)
  
   #col1, col2, col3 = st.columns(3)
 
