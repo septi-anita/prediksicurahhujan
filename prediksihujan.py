@@ -4,9 +4,11 @@ import numpy as np
 import pandas as pd
 from datetime import datetime 
 #import calendar as cld
+
 V=np.zeros((31))
+def app ():
     for i in range (1, 32):
-        V[i]=2
+            V[i]=2
 def call ():
     global CH, D, M, Y
   
@@ -99,7 +101,9 @@ if tombol:
 
 
 #tampilan sebulan  
+app()
 call()
+
  
  
   #col1, col2, col3 = st.columns(3)
