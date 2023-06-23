@@ -73,9 +73,6 @@ PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebaga
 CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 #st.write(CH)
 
-for i in range (1,4):
-    st.write (i)
-
 
 tombol=st.button("search")
 if tombol:
@@ -101,9 +98,10 @@ if tombol:
     
 
 
-#tampilan sebulan  
-app()
-call()
+    #tampilan sebulan
+    st.write ("data bulanan")
+    app()
+    call()
 
  
  
