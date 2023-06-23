@@ -69,9 +69,13 @@ if tombol:
       st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
       st.write ('gerimis')
     
+  PCHMAR23 = df['PCHMAR23'][D-1]
+  PCHAPR23 = df['PCHAPR23'][D-1]
+  PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
+  CH = (PCHMAR23+PCHAPR23+PCHMEI23)/3
 
-  #tampilan sebulan  
+#tampilan sebulan  
   for D in range (1, 31):
      if CH>=40:
         st.write(D, M, Y)
