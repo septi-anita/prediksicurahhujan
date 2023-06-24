@@ -67,7 +67,7 @@ D=int(D)
 #read data
 df = pd.read_csv(r'data_hujan.csv')
 
-PCHMAR23 = df['PCHMAR23'][:]
+PCHMAR23 = df['PCHMAR23']
 PCHAPR23 = df['PCHAPR23'][D-1]
 PCHMEI23 = df['PCHMEI23'][D-1] #kolom pertama "No." sementara diasumsikan sebagai tanggal
 
@@ -100,27 +100,31 @@ if tombol:
    st.write ('data bulanan')
    app()
     
+ ################################################################################################################################################################
+       
    # Mendapatkan jumlah kolom dari pengguna
-   n = 31
-   #st.write(PCHMAR23)
+  # n = 31
+   
     
     # Membuat data dengan kolom-kolom sesuai jumlah yang dimasukkan
-   data = {}
-   for i in range(n):
-        column_name = f'{i+1}'
-        column_data = [f'{PCHMAR23[i]}'] #for j in V]  # contoh data
-        data[column_name] = column_data
+  # data = {}
+  # for i in range(n):
+   #
+    #column_name = f'{i+1}'
+     #   column_data = [f'{PCHMAR23[i]}'] #for j in V]  # contoh data
+      #  data[column_name] = column_data
 
     
     
     # Membuat DataFrame
-   df = pd.DataFrame(data)
+   #df = pd.DataFrame(data)
     
     # Menampilkan tabel
-   st.table(df)
+   #st.table(df)
+    ################################################################################################################################################################
     #tampilan sebulan
     
-   #app()
+   app()
    #call()
 
  
