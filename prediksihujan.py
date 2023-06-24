@@ -34,19 +34,19 @@ def call ():
             st.write(D, M, Y)
             image = Image.open('hujan deras.png')
             st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-            st.write ('hujan deras')
+            st.write ('hujan deras', end=' ')
 
        elif CH<=30:
             st.write(D, M, Y)
             image = Image.open('tidak hujan.png')
             st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-            st.write ('tidak hujan')
+            st.write ('tidak hujan', end=' ')
         
        else:
             st.write(D, M, Y)
             image = Image.open('gerimis.png')
             st.image(image, caption=None, width=80, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
-            st.write ('gerimis')
+            st.write ('gerimis', end=' ')
       
 
 #input date
