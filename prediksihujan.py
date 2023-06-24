@@ -125,7 +125,7 @@ if tombol:
     #tampilan sebulan
     
    app()
-   #call()
+   call()
 
  
 
